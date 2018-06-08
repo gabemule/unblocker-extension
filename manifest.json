@@ -1,5 +1,5 @@
 {
-  "name": "UnBlocker",
+  "name": "UnBlockMe",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Unblock Ads",
@@ -11,7 +11,7 @@
     "persistent": true
   },
   "browser_action": {
-    "default_title": "Unblocker"
+    "default_title": "UnBlockMe"
   },
   "permissions": [
     "https://*/*",
