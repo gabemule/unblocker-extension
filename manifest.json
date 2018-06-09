@@ -4,6 +4,15 @@
   "manifest_version": 2,
   "description": "Unblock Ads",
   "homepage_url": "http://www.laplanta.com.br",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": [
+        "unblock.js"
+      ]
+    }
+  ],
   "background": {
     "scripts": [
       "background.js"
