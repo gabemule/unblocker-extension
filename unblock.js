@@ -2,22 +2,18 @@
 
 // @TODO - improve functions and split into files
 function triggerUnblock() {
-	if (document.getElementById('detecta-adblock')) {
-		document.getElementById('detecta-adblock').remove();
+	// globo.com
+	if(window.location.href.indexOf("globo.com") > -1) {
+		unblockGlobo();
 	}
+}
 
-	if (document.getElementById('barreiraRegister')) {
-		document.getElementById('barreiraRegister').remove();
-	}
-
-	if (document.getElementById('barreiraRegisterExclusiva')) {
-		document.getElementById('barreiraRegisterExclusiva').remove();
-	}
-
-	if (document.getElementsByTagName("BODY")[0].style.overflow !== "auto") {
-		document.getElementsByTagName("BODY")[0].style.overflow = "auto";
-	}
-};
+function unblockGlobo() {
+	if (document.getElementById('detecta-adblock')) { document.getElementById('detecta-adblock').remove() }
+	if (document.getElementById('barreiraRegister')) { document.getElementById('barreiraRegister').remove() }
+	if (document.getElementById('barreiraRegisterExclusiva')) { document.getElementById('barreiraRegisterExclusiva').remove() }
+	if (document.getElementsByTagName("BODY")[0].style.overflow !== "auto") { document.getElementsByTagName("BODY")[0].style.overflow = "auto" }
+}
 
 // document ready
 (function() {
